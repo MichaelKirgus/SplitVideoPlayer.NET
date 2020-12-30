@@ -37,20 +37,22 @@ Partial Class Form1
         Me.BottomLeftToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BottomRightToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SyncPlaybackPositionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SyncSizesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SyncZoomFactorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SyncPositionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SyncPositionsinvertedToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.ReZoomAfterChangeSizeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowAlignmentLinesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AlwaysResizeVideoPanelsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReSizeVideoPanelsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.X2AutoSplitAlignmentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.X2AutoSplitAlignmentToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AutoSplitAlignment100ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AutoSplitAlignment150ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer()
-        Me.VideoPlayerCtl1 = New SplitVideoPlayer.NET.VideoPlayerCtl()
-        Me.VideoPlayerCtl3 = New SplitVideoPlayer.NET.VideoPlayerCtl()
         Me.SplitContainer4 = New System.Windows.Forms.SplitContainer()
-        Me.VideoPlayerCtl2 = New SplitVideoPlayer.NET.VideoPlayerCtl()
-        Me.VideoPlayerCtl4 = New SplitVideoPlayer.NET.VideoPlayerCtl()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -64,6 +66,10 @@ Partial Class Form1
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.VideoPlayerCtl1 = New SplitVideoPlayer.NET.VideoPlayerCtl()
+        Me.VideoPlayerCtl3 = New SplitVideoPlayer.NET.VideoPlayerCtl()
+        Me.VideoPlayerCtl2 = New SplitVideoPlayer.NET.VideoPlayerCtl()
+        Me.VideoPlayerCtl4 = New SplitVideoPlayer.NET.VideoPlayerCtl()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -128,22 +134,22 @@ Partial Class Form1
         '
         'ContextMenuStrip1
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ViewModeToolStripMenuItem, Me.X2ToolStripMenuItem1, Me.X2ToolStripMenuItem, Me.ToolStripSeparator1, Me.MasterPlaybackToolStripMenuItem, Me.TopLeftToolStripMenuItem, Me.TopRightToolStripMenuItem, Me.BottomLeftToolStripMenuItem, Me.BottomRightToolStripMenuItem, Me.ToolStripSeparator2, Me.SyncSizesToolStripMenuItem, Me.ReZoomAfterChangeSizeToolStripMenuItem, Me.ShowAlignmentLinesToolStripMenuItem, Me.AlwaysResizeVideoPanelsToolStripMenuItem, Me.ReSizeVideoPanelsToolStripMenuItem, Me.ToolStripSeparator3, Me.X2AutoSplitAlignmentToolStripMenuItem, Me.X2AutoSplitAlignmentToolStripMenuItem1})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ViewModeToolStripMenuItem, Me.X2ToolStripMenuItem1, Me.X2ToolStripMenuItem, Me.ToolStripSeparator1, Me.MasterPlaybackToolStripMenuItem, Me.TopLeftToolStripMenuItem, Me.TopRightToolStripMenuItem, Me.BottomLeftToolStripMenuItem, Me.BottomRightToolStripMenuItem, Me.ToolStripSeparator2, Me.SyncPlaybackPositionToolStripMenuItem, Me.SyncSizesToolStripMenuItem, Me.SyncZoomFactorToolStripMenuItem, Me.ToolStripSeparator4, Me.SyncPositionsToolStripMenuItem, Me.SyncPositionsinvertedToolStripMenuItem, Me.ToolStripSeparator5, Me.ReZoomAfterChangeSizeToolStripMenuItem, Me.ShowAlignmentLinesToolStripMenuItem, Me.AlwaysResizeVideoPanelsToolStripMenuItem, Me.ReSizeVideoPanelsToolStripMenuItem, Me.ToolStripSeparator3, Me.AutoSplitAlignment100ToolStripMenuItem, Me.AutoSplitAlignment150ToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(218, 352)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(225, 452)
         '
         'ViewModeToolStripMenuItem
         '
         Me.ViewModeToolStripMenuItem.Enabled = False
         Me.ViewModeToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ViewModeToolStripMenuItem.Name = "ViewModeToolStripMenuItem"
-        Me.ViewModeToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.ViewModeToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.ViewModeToolStripMenuItem.Text = "View mode"
         '
         'X2ToolStripMenuItem1
         '
         Me.X2ToolStripMenuItem1.Name = "X2ToolStripMenuItem1"
-        Me.X2ToolStripMenuItem1.Size = New System.Drawing.Size(217, 22)
+        Me.X2ToolStripMenuItem1.Size = New System.Drawing.Size(224, 22)
         Me.X2ToolStripMenuItem1.Text = "1x2 (Dual)"
         '
         'X2ToolStripMenuItem
@@ -152,20 +158,20 @@ Partial Class Form1
         Me.X2ToolStripMenuItem.CheckOnClick = True
         Me.X2ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.X2ToolStripMenuItem.Name = "X2ToolStripMenuItem"
-        Me.X2ToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.X2ToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.X2ToolStripMenuItem.Text = "2x2 (Quad)"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(214, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(221, 6)
         '
         'MasterPlaybackToolStripMenuItem
         '
         Me.MasterPlaybackToolStripMenuItem.Enabled = False
         Me.MasterPlaybackToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MasterPlaybackToolStripMenuItem.Name = "MasterPlaybackToolStripMenuItem"
-        Me.MasterPlaybackToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.MasterPlaybackToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.MasterPlaybackToolStripMenuItem.Text = "Master playback"
         '
         'TopLeftToolStripMenuItem
@@ -174,34 +180,43 @@ Partial Class Form1
         Me.TopLeftToolStripMenuItem.CheckOnClick = True
         Me.TopLeftToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.TopLeftToolStripMenuItem.Name = "TopLeftToolStripMenuItem"
-        Me.TopLeftToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.TopLeftToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.TopLeftToolStripMenuItem.Text = "Top left"
         '
         'TopRightToolStripMenuItem
         '
         Me.TopRightToolStripMenuItem.CheckOnClick = True
         Me.TopRightToolStripMenuItem.Name = "TopRightToolStripMenuItem"
-        Me.TopRightToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.TopRightToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.TopRightToolStripMenuItem.Text = "Top right"
         '
         'BottomLeftToolStripMenuItem
         '
         Me.BottomLeftToolStripMenuItem.CheckOnClick = True
         Me.BottomLeftToolStripMenuItem.Name = "BottomLeftToolStripMenuItem"
-        Me.BottomLeftToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.BottomLeftToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.BottomLeftToolStripMenuItem.Text = "Bottom left"
         '
         'BottomRightToolStripMenuItem
         '
         Me.BottomRightToolStripMenuItem.CheckOnClick = True
         Me.BottomRightToolStripMenuItem.Name = "BottomRightToolStripMenuItem"
-        Me.BottomRightToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.BottomRightToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.BottomRightToolStripMenuItem.Text = "Bottom right"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(214, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(221, 6)
+        '
+        'SyncPlaybackPositionToolStripMenuItem
+        '
+        Me.SyncPlaybackPositionToolStripMenuItem.Checked = True
+        Me.SyncPlaybackPositionToolStripMenuItem.CheckOnClick = True
+        Me.SyncPlaybackPositionToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.SyncPlaybackPositionToolStripMenuItem.Name = "SyncPlaybackPositionToolStripMenuItem"
+        Me.SyncPlaybackPositionToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
+        Me.SyncPlaybackPositionToolStripMenuItem.Text = "Sync playback position"
         '
         'SyncSizesToolStripMenuItem
         '
@@ -209,8 +224,43 @@ Partial Class Form1
         Me.SyncSizesToolStripMenuItem.CheckOnClick = True
         Me.SyncSizesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.SyncSizesToolStripMenuItem.Name = "SyncSizesToolStripMenuItem"
-        Me.SyncSizesToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.SyncSizesToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.SyncSizesToolStripMenuItem.Text = "Sync sizes"
+        '
+        'SyncZoomFactorToolStripMenuItem
+        '
+        Me.SyncZoomFactorToolStripMenuItem.Checked = True
+        Me.SyncZoomFactorToolStripMenuItem.CheckOnClick = True
+        Me.SyncZoomFactorToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.SyncZoomFactorToolStripMenuItem.Name = "SyncZoomFactorToolStripMenuItem"
+        Me.SyncZoomFactorToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
+        Me.SyncZoomFactorToolStripMenuItem.Text = "Sync zoom factor"
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(221, 6)
+        '
+        'SyncPositionsToolStripMenuItem
+        '
+        Me.SyncPositionsToolStripMenuItem.CheckOnClick = True
+        Me.SyncPositionsToolStripMenuItem.Name = "SyncPositionsToolStripMenuItem"
+        Me.SyncPositionsToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
+        Me.SyncPositionsToolStripMenuItem.Text = "Sync positions"
+        '
+        'SyncPositionsinvertedToolStripMenuItem
+        '
+        Me.SyncPositionsinvertedToolStripMenuItem.Checked = True
+        Me.SyncPositionsinvertedToolStripMenuItem.CheckOnClick = True
+        Me.SyncPositionsinvertedToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.SyncPositionsinvertedToolStripMenuItem.Name = "SyncPositionsinvertedToolStripMenuItem"
+        Me.SyncPositionsinvertedToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
+        Me.SyncPositionsinvertedToolStripMenuItem.Text = "Sync positions (inverted)"
+        '
+        'ToolStripSeparator5
+        '
+        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(221, 6)
         '
         'ReZoomAfterChangeSizeToolStripMenuItem
         '
@@ -218,7 +268,7 @@ Partial Class Form1
         Me.ReZoomAfterChangeSizeToolStripMenuItem.CheckOnClick = True
         Me.ReZoomAfterChangeSizeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.ReZoomAfterChangeSizeToolStripMenuItem.Name = "ReZoomAfterChangeSizeToolStripMenuItem"
-        Me.ReZoomAfterChangeSizeToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.ReZoomAfterChangeSizeToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.ReZoomAfterChangeSizeToolStripMenuItem.Text = "Re-Zoom after change size"
         '
         'ShowAlignmentLinesToolStripMenuItem
@@ -227,7 +277,7 @@ Partial Class Form1
         Me.ShowAlignmentLinesToolStripMenuItem.CheckOnClick = True
         Me.ShowAlignmentLinesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.ShowAlignmentLinesToolStripMenuItem.Name = "ShowAlignmentLinesToolStripMenuItem"
-        Me.ShowAlignmentLinesToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.ShowAlignmentLinesToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.ShowAlignmentLinesToolStripMenuItem.Text = "Show alignment lines"
         '
         'AlwaysResizeVideoPanelsToolStripMenuItem
@@ -236,31 +286,31 @@ Partial Class Form1
         Me.AlwaysResizeVideoPanelsToolStripMenuItem.CheckOnClick = True
         Me.AlwaysResizeVideoPanelsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.AlwaysResizeVideoPanelsToolStripMenuItem.Name = "AlwaysResizeVideoPanelsToolStripMenuItem"
-        Me.AlwaysResizeVideoPanelsToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.AlwaysResizeVideoPanelsToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.AlwaysResizeVideoPanelsToolStripMenuItem.Text = "Always re-size video panels"
         '
         'ReSizeVideoPanelsToolStripMenuItem
         '
         Me.ReSizeVideoPanelsToolStripMenuItem.Name = "ReSizeVideoPanelsToolStripMenuItem"
-        Me.ReSizeVideoPanelsToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.ReSizeVideoPanelsToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.ReSizeVideoPanelsToolStripMenuItem.Text = "Re-Size video panels"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(214, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(221, 6)
         '
-        'X2AutoSplitAlignmentToolStripMenuItem
+        'AutoSplitAlignment100ToolStripMenuItem
         '
-        Me.X2AutoSplitAlignmentToolStripMenuItem.Name = "X2AutoSplitAlignmentToolStripMenuItem"
-        Me.X2AutoSplitAlignmentToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
-        Me.X2AutoSplitAlignmentToolStripMenuItem.Text = "1x2 Auto-Split alignment"
+        Me.AutoSplitAlignment100ToolStripMenuItem.Name = "AutoSplitAlignment100ToolStripMenuItem"
+        Me.AutoSplitAlignment100ToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
+        Me.AutoSplitAlignment100ToolStripMenuItem.Text = "Auto-Split alignment (100%)"
         '
-        'X2AutoSplitAlignmentToolStripMenuItem1
+        'AutoSplitAlignment150ToolStripMenuItem
         '
-        Me.X2AutoSplitAlignmentToolStripMenuItem1.Name = "X2AutoSplitAlignmentToolStripMenuItem1"
-        Me.X2AutoSplitAlignmentToolStripMenuItem1.Size = New System.Drawing.Size(217, 22)
-        Me.X2AutoSplitAlignmentToolStripMenuItem1.Text = "2x2 Auto-Split alignment"
+        Me.AutoSplitAlignment150ToolStripMenuItem.Name = "AutoSplitAlignment150ToolStripMenuItem"
+        Me.AutoSplitAlignment150ToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
+        Me.AutoSplitAlignment150ToolStripMenuItem.Text = "Auto-Split alignment (150%)"
         '
         'SplitContainer3
         '
@@ -279,27 +329,6 @@ Partial Class Form1
         Me.SplitContainer3.Size = New System.Drawing.Size(492, 572)
         Me.SplitContainer3.SplitterDistance = 286
         Me.SplitContainer3.TabIndex = 0
-        '
-        'VideoPlayerCtl1
-        '
-        Me.VideoPlayerCtl1.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.VideoPlayerCtl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.VideoPlayerCtl1.InitFileNameAlignmentBottom = False
-        Me.VideoPlayerCtl1.InitMute = False
-        Me.VideoPlayerCtl1.Location = New System.Drawing.Point(0, 0)
-        Me.VideoPlayerCtl1.Name = "VideoPlayerCtl1"
-        Me.VideoPlayerCtl1.Size = New System.Drawing.Size(492, 286)
-        Me.VideoPlayerCtl1.TabIndex = 0
-        '
-        'VideoPlayerCtl3
-        '
-        Me.VideoPlayerCtl3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.VideoPlayerCtl3.InitFileNameAlignmentBottom = True
-        Me.VideoPlayerCtl3.InitMute = True
-        Me.VideoPlayerCtl3.Location = New System.Drawing.Point(0, 0)
-        Me.VideoPlayerCtl3.Name = "VideoPlayerCtl3"
-        Me.VideoPlayerCtl3.Size = New System.Drawing.Size(492, 282)
-        Me.VideoPlayerCtl3.TabIndex = 1
         '
         'SplitContainer4
         '
@@ -320,28 +349,9 @@ Partial Class Form1
         Me.SplitContainer4.SplitterDistance = 286
         Me.SplitContainer4.TabIndex = 0
         '
-        'VideoPlayerCtl2
-        '
-        Me.VideoPlayerCtl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.VideoPlayerCtl2.InitFileNameAlignmentBottom = False
-        Me.VideoPlayerCtl2.InitMute = True
-        Me.VideoPlayerCtl2.Location = New System.Drawing.Point(0, 0)
-        Me.VideoPlayerCtl2.Name = "VideoPlayerCtl2"
-        Me.VideoPlayerCtl2.Size = New System.Drawing.Size(488, 286)
-        Me.VideoPlayerCtl2.TabIndex = 1
-        '
-        'VideoPlayerCtl4
-        '
-        Me.VideoPlayerCtl4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.VideoPlayerCtl4.InitFileNameAlignmentBottom = True
-        Me.VideoPlayerCtl4.InitMute = True
-        Me.VideoPlayerCtl4.Location = New System.Drawing.Point(0, 0)
-        Me.VideoPlayerCtl4.Name = "VideoPlayerCtl4"
-        Me.VideoPlayerCtl4.Size = New System.Drawing.Size(488, 282)
-        Me.VideoPlayerCtl4.TabIndex = 1
-        '
         'Panel1
         '
+        Me.Panel1.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -460,11 +470,53 @@ Partial Class Form1
         Me.OpenFileDialog1.RestoreDirectory = True
         Me.OpenFileDialog1.SupportMultiDottedExtensions = True
         '
+        'VideoPlayerCtl1
+        '
+        Me.VideoPlayerCtl1.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.VideoPlayerCtl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.VideoPlayerCtl1.InitFileNameAlignmentBottom = False
+        Me.VideoPlayerCtl1.InitMute = False
+        Me.VideoPlayerCtl1.Location = New System.Drawing.Point(0, 0)
+        Me.VideoPlayerCtl1.Name = "VideoPlayerCtl1"
+        Me.VideoPlayerCtl1.Size = New System.Drawing.Size(492, 286)
+        Me.VideoPlayerCtl1.TabIndex = 0
+        '
+        'VideoPlayerCtl3
+        '
+        Me.VideoPlayerCtl3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.VideoPlayerCtl3.InitFileNameAlignmentBottom = True
+        Me.VideoPlayerCtl3.InitMute = True
+        Me.VideoPlayerCtl3.Location = New System.Drawing.Point(0, 0)
+        Me.VideoPlayerCtl3.Name = "VideoPlayerCtl3"
+        Me.VideoPlayerCtl3.Size = New System.Drawing.Size(492, 282)
+        Me.VideoPlayerCtl3.TabIndex = 1
+        '
+        'VideoPlayerCtl2
+        '
+        Me.VideoPlayerCtl2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.VideoPlayerCtl2.InitFileNameAlignmentBottom = False
+        Me.VideoPlayerCtl2.InitMute = True
+        Me.VideoPlayerCtl2.Location = New System.Drawing.Point(0, 0)
+        Me.VideoPlayerCtl2.Name = "VideoPlayerCtl2"
+        Me.VideoPlayerCtl2.Size = New System.Drawing.Size(488, 286)
+        Me.VideoPlayerCtl2.TabIndex = 1
+        '
+        'VideoPlayerCtl4
+        '
+        Me.VideoPlayerCtl4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.VideoPlayerCtl4.InitFileNameAlignmentBottom = True
+        Me.VideoPlayerCtl4.InitMute = True
+        Me.VideoPlayerCtl4.Location = New System.Drawing.Point(0, 0)
+        Me.VideoPlayerCtl4.Name = "VideoPlayerCtl4"
+        Me.VideoPlayerCtl4.Size = New System.Drawing.Size(488, 282)
+        Me.VideoPlayerCtl4.TabIndex = 1
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(984, 661)
+        Me.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Controls.Add(Me.SplitContainer1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
@@ -535,6 +587,12 @@ Partial Class Form1
     Friend WithEvents ReSizeVideoPanelsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AlwaysResizeVideoPanelsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
-    Friend WithEvents X2AutoSplitAlignmentToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents X2AutoSplitAlignmentToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents SyncPositionsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SyncPositionsinvertedToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator5 As ToolStripSeparator
+    Friend WithEvents SyncZoomFactorToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SyncPlaybackPositionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AutoSplitAlignment100ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AutoSplitAlignment150ToolStripMenuItem As ToolStripMenuItem
 End Class
