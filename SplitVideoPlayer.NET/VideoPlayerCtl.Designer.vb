@@ -49,63 +49,66 @@ Partial Class VideoPlayerCtl
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.StretchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResetViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CopyPictureToClipboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SavePictureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.VideoFileName = New System.Windows.Forms.Label()
         Me.VideoPanel = New System.Windows.Forms.Panel()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.PanelVideoContext1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelVideoContext1
         '
-        Me.PanelVideoContext1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LoadVideoToolStripMenuItem, Me.UnloadVideoToolStripMenuItem, Me.ToolStripSeparator1, Me.PlayToolStripMenuItem, Me.PauseToolStripMenuItem, Me.StopToolStripMenuItem, Me.ToolStripSeparator2, Me.MuteToolStripMenuItem, Me.ShowFilenameToolStripMenuItem, Me.ToolStripSeparator3, Me.ToolStripMenuItem3, Me.ToolStripMenuItem4, Me.ToolStripMenuItem5, Me.ToolStripMenuItem2, Me.ToolStripMenuItem6, Me.ToolStripMenuItem7, Me.ToolStripMenuItem8, Me.ToolStripMenuItem9, Me.ToolStripMenuItem10, Me.ToolStripMenuItem11, Me.ToolStripMenuItem12, Me.ToolStripMenuItem13, Me.ToolStripSeparator4, Me.StretchToolStripMenuItem, Me.ResetViewToolStripMenuItem})
+        Me.PanelVideoContext1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LoadVideoToolStripMenuItem, Me.UnloadVideoToolStripMenuItem, Me.ToolStripSeparator1, Me.PlayToolStripMenuItem, Me.PauseToolStripMenuItem, Me.StopToolStripMenuItem, Me.ToolStripSeparator2, Me.MuteToolStripMenuItem, Me.ShowFilenameToolStripMenuItem, Me.ToolStripSeparator3, Me.ToolStripMenuItem3, Me.ToolStripMenuItem4, Me.ToolStripMenuItem5, Me.ToolStripMenuItem2, Me.ToolStripMenuItem6, Me.ToolStripMenuItem7, Me.ToolStripMenuItem8, Me.ToolStripMenuItem9, Me.ToolStripMenuItem10, Me.ToolStripMenuItem11, Me.ToolStripMenuItem12, Me.ToolStripMenuItem13, Me.ToolStripSeparator4, Me.StretchToolStripMenuItem, Me.ResetViewToolStripMenuItem, Me.ToolStripSeparator5, Me.CopyPictureToClipboardToolStripMenuItem, Me.SavePictureToolStripMenuItem})
         Me.PanelVideoContext1.Name = "PanelVideoContext1"
-        Me.PanelVideoContext1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.PanelVideoContext1.Size = New System.Drawing.Size(153, 490)
+        Me.PanelVideoContext1.Size = New System.Drawing.Size(210, 540)
         '
         'LoadVideoToolStripMenuItem
         '
         Me.LoadVideoToolStripMenuItem.Image = Global.SplitVideoPlayer.NET.My.Resources.Resources.document_open_folder
         Me.LoadVideoToolStripMenuItem.Name = "LoadVideoToolStripMenuItem"
-        Me.LoadVideoToolStripMenuItem.Size = New System.Drawing.Size(160, 30)
+        Me.LoadVideoToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
         Me.LoadVideoToolStripMenuItem.Text = "Load video..."
         '
         'UnloadVideoToolStripMenuItem
         '
         Me.UnloadVideoToolStripMenuItem.Image = Global.SplitVideoPlayer.NET.My.Resources.Resources.transform_rotate_2
         Me.UnloadVideoToolStripMenuItem.Name = "UnloadVideoToolStripMenuItem"
-        Me.UnloadVideoToolStripMenuItem.Size = New System.Drawing.Size(160, 30)
+        Me.UnloadVideoToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
         Me.UnloadVideoToolStripMenuItem.Text = "Unload video"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(157, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(214, 6)
         '
         'PlayToolStripMenuItem
         '
         Me.PlayToolStripMenuItem.Image = Global.SplitVideoPlayer.NET.My.Resources.Resources.media_playback_start_71
         Me.PlayToolStripMenuItem.Name = "PlayToolStripMenuItem"
-        Me.PlayToolStripMenuItem.Size = New System.Drawing.Size(160, 30)
+        Me.PlayToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
         Me.PlayToolStripMenuItem.Text = "Play"
         '
         'PauseToolStripMenuItem
         '
         Me.PauseToolStripMenuItem.Image = Global.SplitVideoPlayer.NET.My.Resources.Resources.media_playback_pause_71
         Me.PauseToolStripMenuItem.Name = "PauseToolStripMenuItem"
-        Me.PauseToolStripMenuItem.Size = New System.Drawing.Size(160, 30)
+        Me.PauseToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
         Me.PauseToolStripMenuItem.Text = "Pause"
         '
         'StopToolStripMenuItem
         '
         Me.StopToolStripMenuItem.Image = Global.SplitVideoPlayer.NET.My.Resources.Resources.media_playback_stop_71
         Me.StopToolStripMenuItem.Name = "StopToolStripMenuItem"
-        Me.StopToolStripMenuItem.Size = New System.Drawing.Size(160, 30)
+        Me.StopToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
         Me.StopToolStripMenuItem.Text = "Stop"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(157, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(214, 6)
         '
         'MuteToolStripMenuItem
         '
@@ -113,7 +116,7 @@ Partial Class VideoPlayerCtl
         Me.MuteToolStripMenuItem.CheckOnClick = True
         Me.MuteToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.MuteToolStripMenuItem.Name = "MuteToolStripMenuItem"
-        Me.MuteToolStripMenuItem.Size = New System.Drawing.Size(160, 30)
+        Me.MuteToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
         Me.MuteToolStripMenuItem.Text = "Mute"
         '
         'ShowFilenameToolStripMenuItem
@@ -122,102 +125,121 @@ Partial Class VideoPlayerCtl
         Me.ShowFilenameToolStripMenuItem.CheckOnClick = True
         Me.ShowFilenameToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.ShowFilenameToolStripMenuItem.Name = "ShowFilenameToolStripMenuItem"
-        Me.ShowFilenameToolStripMenuItem.Size = New System.Drawing.Size(160, 30)
+        Me.ShowFilenameToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
         Me.ShowFilenameToolStripMenuItem.Text = "Show filename"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(157, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(214, 6)
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem3.Text = "25%"
         '
         'ToolStripMenuItem4
         '
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem4.Text = "50%"
         '
         'ToolStripMenuItem5
         '
         Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem5.Text = "75%"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem2.Text = "100%"
         '
         'ToolStripMenuItem6
         '
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem6.Text = "125%"
         '
         'ToolStripMenuItem7
         '
         Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem7.Text = "150%"
         '
         'ToolStripMenuItem8
         '
         Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem8.Text = "175%"
         '
         'ToolStripMenuItem9
         '
         Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
-        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem9.Text = "200%"
         '
         'ToolStripMenuItem10
         '
         Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
-        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem10.Text = "250%"
         '
         'ToolStripMenuItem11
         '
         Me.ToolStripMenuItem11.Name = "ToolStripMenuItem11"
-        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem11.Text = "300%"
         '
         'ToolStripMenuItem12
         '
         Me.ToolStripMenuItem12.Name = "ToolStripMenuItem12"
-        Me.ToolStripMenuItem12.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem12.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem12.Text = "350%"
         '
         'ToolStripMenuItem13
         '
         Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
-        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(160, 30)
+        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem13.Text = "400%"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(157, 6)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(214, 6)
         '
         'StretchToolStripMenuItem
         '
         Me.StretchToolStripMenuItem.Name = "StretchToolStripMenuItem"
-        Me.StretchToolStripMenuItem.Size = New System.Drawing.Size(160, 30)
+        Me.StretchToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
         Me.StretchToolStripMenuItem.Text = "Stretch"
         '
         'ResetViewToolStripMenuItem
         '
         Me.ResetViewToolStripMenuItem.Name = "ResetViewToolStripMenuItem"
-        Me.ResetViewToolStripMenuItem.Size = New System.Drawing.Size(160, 30)
+        Me.ResetViewToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
         Me.ResetViewToolStripMenuItem.Text = "Reset view"
+        '
+        'ToolStripSeparator5
+        '
+        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(214, 6)
+        '
+        'CopyPictureToClipboardToolStripMenuItem
+        '
+        Me.CopyPictureToClipboardToolStripMenuItem.Image = Global.SplitVideoPlayer.NET.My.Resources.Resources.edit_copy_7
+        Me.CopyPictureToClipboardToolStripMenuItem.Name = "CopyPictureToClipboardToolStripMenuItem"
+        Me.CopyPictureToClipboardToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
+        Me.CopyPictureToClipboardToolStripMenuItem.Text = "Copy picture to clipboard"
+        '
+        'SavePictureToolStripMenuItem
+        '
+        Me.SavePictureToolStripMenuItem.Image = Global.SplitVideoPlayer.NET.My.Resources.Resources.picture_save
+        Me.SavePictureToolStripMenuItem.Name = "SavePictureToolStripMenuItem"
+        Me.SavePictureToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
+        Me.SavePictureToolStripMenuItem.Text = "Save picture..."
         '
         'OpenFileDialog1
         '
@@ -253,6 +275,10 @@ Partial Class VideoPlayerCtl
         Me.VideoPanel.Name = "VideoPanel"
         Me.VideoPanel.Size = New System.Drawing.Size(413, 256)
         Me.VideoPanel.TabIndex = 0
+        '
+        'SaveFileDialog1
+        '
+        Me.SaveFileDialog1.Filter = "JPEG-Image|*.jpeg|PNG-Image|*.png|Bitmap|*.bmp"
         '
         'VideoPlayerCtl
         '
@@ -298,4 +324,8 @@ Partial Class VideoPlayerCtl
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ResetViewToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ShowFilenameToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator5 As ToolStripSeparator
+    Friend WithEvents CopyPictureToClipboardToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SavePictureToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class
